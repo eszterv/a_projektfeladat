@@ -1,15 +1,18 @@
-/* === BANNER  === */
+/* === body  === */
+body {
+    background-color: #e6d5ab;  
+}
 
 /* Banner  */
 .banner {
-    position: relative; /* Fix helyett relatív pozíció, hogy ne takarja ki a navigációt */
+    position: relative; 
     top: 0;
     left: 0;
     width: 100%;
-    height: 55vh; /* Magasság nagyobb képernyőkön */
-    z-index: 1; /* A térkép mögött marad */
-    background: url('images/banner.png') no-repeat center center/cover; /* Hátteret igazító beállítás */
-    opacity: 0.8; /* Átlátszóság marad, a szöveg kiemeléséhez */
+    height: 55vh; 
+    z-index: 1; 
+    background: url('images/banner.png') no-repeat center center/cover; 
+    opacity: 0.8; 
 }
 
 

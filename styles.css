@@ -189,6 +189,10 @@ body {
     margin-top: 10px;
 }
 
+caption {
+    display: none;
+}
+
 /* Styling for Images in the Table */
 .table-image {
     width: 100px; /* Set desired width */

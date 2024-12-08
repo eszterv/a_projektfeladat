@@ -9,8 +9,8 @@
     height: 55vh;
     z-index: 1;
     background: url('images/banner.png') no-repeat center center/cover;
-    opacity: 0.8; /* Mindig áttetsző */
-    transition: opacity 0.3s ease;
+    opacity: 0.8; 
+    
 }
 
 /* overlay */
@@ -23,11 +23,7 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* scrolling */
-.banner.scrolled {
-    transform: translateY(-50%); 
-    opacity: 0.5; 
-}
+
 
 .banner-title {
     position: relative;
@@ -55,22 +51,8 @@
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);  
 }
 
-/*root font size and responsive font sizes*/
-html {
-    font-size: 16px; /* Default for desktop, maybe I want to change later */
-}
 
-@media (max-width: 768px) {
-    html {
-        font-size: 14px; /* Smaller screens */
-    }
-}
 
-@media (max-width: 480px) {
-    html {
-        font-size: 12px; /* Very small screens */
-    }
-}
 
 /* === NAV menu === */
 .menu {
@@ -111,47 +93,63 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Smaller Screens */
-@media (max-width: 768px) {
-    .menu-item {
-        font-size: 0.9rem; 
-        padding: 8px 20px; 
-    }
 
-    .menu-container {
-        gap: 10px; 
-    }
-}
+/* === reszponzivitás === */
 
-/* === MAP === */
-.map-container {
-    max-width: 1400px;
-    width: 90%;
-    margin: 40px auto;
-    position: relative; /* Alaphelyzet */
-    z-index: 2; /* A térkép a banner fölé kerül */
-}
-
-#map {
-    height: calc(70vh - 100px);  /* Dinamikus magasság a viewport méretéhez igazítva */
-    min-height: 200px;           /* Minimum magasság, hogy ne legyen túl kicsi */
-    max-height: 800px;           /* Maximum magasság, hogy ne legyen túl nagy */
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Képernyőméret szerinti igazítások */
+/* max. 1200px */
 @media (max-width: 1200px) {
     .map-container {
         width: 95%;
     }
 }
 
+/* max. 768px */
 @media (max-width: 768px) {
+    html {
+        font-size: 14px; 
+    }
+
+    .menu-item {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+
+    .menu-container {
+        gap: 10px;
+    }
+
+    .banner {
+        height: 40vh; 
+    }
+
+    .banner-title {
+        font-size: 1.5rem; 
+    }
+
+    .title-small {
+        font-size: 0.8rem; 
+    }
+
     #map {
-        height: 400px !important;
+        height: 400px !important; 
     }
 }
 
+/* max. 480px */
+@media (max-width: 480px) {
+    html {
+        font-size: 12px; 
+    }
 
+    .banner {
+        height: 30vh; 
+    }
+
+    .banner-title {
+        font-size: 1.2rem; 
+    }
+
+    .title-small {
+        font-size: 0.7rem; 
+    }
+}

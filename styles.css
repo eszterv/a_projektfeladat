@@ -87,6 +87,23 @@
     background-color: #000044; /* Hover állapot színe */
 }
 
+.map-container {
+    position: relative; 
+    max-width: 1400px; 
+    width: 90%; 
+    margin: 60px auto; 
+    z-index: 1; /* Mindig a navigáció alatt marad */
+}
+
+#map {
+    height: calc(70vh - 100px); 
+    min-height: 200px; 
+    max-height: 800px; /
+    width: 100%;
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+}
+
 
 /* === reszponzivitás === */
 

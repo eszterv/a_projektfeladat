@@ -138,7 +138,8 @@ html {
 
 @media (max-width: 768px) {
     #map {
-        height: calc(60vh - 80px);  /* Kisebb magasság mobilon */
-        min-height: 300px;
+        height: 400px !important;
     }
 }
+
+

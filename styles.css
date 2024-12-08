@@ -1,7 +1,7 @@
 /* === BANNER  === */
 .banner {
     position: relative;
-    background: url('banner.png') no-repeat center center/cover;
+    background: url('images/banner.png') no-repeat center center/cover;
     height: 55vh;
     width: 100%;
     display: flex;

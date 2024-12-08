@@ -167,3 +167,20 @@ body {
         font-size: 0.8rem; 
     }
 }
+
+/*defition pairs*/
+.inline-definition dt {
+    display: inline; 
+    margin: 0;
+}
+
+.inline-definition dd {
+    display: inline; 
+    margin: 0 0 10px; 
+}
+
+
+.inline-definition dd::after {
+    content: ""; 
+    display: block; 
+}

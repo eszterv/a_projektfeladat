@@ -193,6 +193,11 @@ caption {
     display: none;
 }
 
+.worth-detour {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* Styling for Images in the Table */
 .table-image {
     width: 100px; /* Set desired width */

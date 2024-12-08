@@ -2,16 +2,16 @@
 
 /* Banner  */
 .banner {
-    position: fixed;
+    position: relative; /* Fix helyett relatív pozíció, hogy ne takarja ki a navigációt */
     top: 0;
     left: 0;
     width: 100%;
-    height: 55vh;
-    z-index: 1;
-    background: url('images/banner.png') no-repeat center center/cover;
-    opacity: 0.8; 
-    
+    height: 55vh; /* Magasság nagyobb képernyőkön */
+    z-index: 1; /* A térkép mögött marad */
+    background: url('images/banner.png') no-repeat center center/cover; /* Hátteret igazító beállítás */
+    opacity: 0.8; /* Átlátszóság marad, a szöveg kiemeléséhez */
 }
+
 
 /* overlay */
 .banner .overlay {
@@ -56,41 +56,35 @@
 
 /* === NAV menu === */
 .menu {
-    margin-top: -30px;
-    margin-bottom: 30px;
-    position: relative;
-    z-index: 2;
+    position: relative; /* Relatív, hogy mindig a banner alatt maradjon */
+    z-index: 3; /* A navigáció a banner és a térkép fölött van */
+    margin: 0 auto; /* Középre igazítás */
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /*  wrap on smaller screens */
+    padding: 10px 0; /* Navigáció belső tér */
+    background-color: #000033; /* Navigáció hátterének színe */
 }
 
 .menu-container {
     display: flex;
-    gap: 20px; /* gap between buttons */
-    flex-wrap: wrap; 
-    justify-content: center; 
+    gap: 20px; /* Gombok közötti távolság */
+    justify-content: center;
 }
 
-/* Menu Items */
 .menu-item {
     color: #ffffff;
-    font-size: 1rem; 
+    font-size: 1rem; /* Alap méret nagyobb képernyőn */
     text-transform: uppercase;
-    padding: 10px 25px; 
+    padding: 10px 25px; /* Belül tér a gombokban */
     text-decoration: none;
-    border-radius: 5px; 
-    background-color: #000033;
-    transition: all 0.3s ease; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; /* Lekerekített szélek */
+    background-color: #000033; /* Sötét gomb háttér */
+    transition: all 0.3s ease; /* Animáció hoverre */
 }
 
-/* Hover */
 .menu-item:hover {
-    background-color: #000044;
-    color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: #000044; /* Hover állapot színe */
 }
 
 

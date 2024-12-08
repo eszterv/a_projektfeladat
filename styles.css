@@ -184,3 +184,14 @@ body {
     content: ""; 
     display: block; 
 }
+
+/* Styling for Images in the Table */
+.table-image {
+    width: 100px; /* Set desired width */
+    height: 100px; /* Set desired height */
+    object-fit: cover; /* Ensures the image covers the area, cropping if necessary */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+    display: block; /* Ensures block-level display */
+    margin: 0 auto; /* Centers the image */
+}

@@ -185,6 +185,10 @@ body {
     display: block; 
 }
 
+.table {
+    margin-top: 10px;
+}
+
 /* Styling for Images in the Table */
 .table-image {
     width: 100px; /* Set desired width */

@@ -112,3 +112,33 @@ html {
         gap: 10px; 
     }
 }
+
+/* === MAP === */
+.map-container {
+    max-width: 1400px;  
+    width: 90%;         
+    margin: 40px auto;  
+}
+
+#map {
+    height: calc(70vh - 100px);  /* Dinamikus magasság a viewport méretéhez igazítva */
+    min-height: 200px;           /* Minimum magasság, hogy ne legyen túl kicsi */
+    max-height: 800px;           /* Maximum magasság, hogy ne legyen túl nagy */
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Képernyőméret szerinti igazítások */
+@media (max-width: 1200px) {
+    .map-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    #map {
+        height: calc(60vh - 80px);  /* Kisebb magasság mobilon */
+        min-height: 300px;
+    }
+}

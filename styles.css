@@ -44,3 +44,20 @@
     padding: 0 20px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);  
 }
+
+/*root font size and responsive font sizes*/
+html {
+    font-size: 16px; /* Default for desktop */
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* Smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px; /* Very small screens */
+    }
+}

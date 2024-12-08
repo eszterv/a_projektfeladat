@@ -56,35 +56,35 @@
 
 /* === NAV menu === */
 .menu {
-    position: relative; /* Relatív, hogy mindig a banner alatt maradjon */
-    z-index: 3; /* A navigáció a banner és a térkép fölött van */
-    margin: 0 auto; /* Középre igazítás */
-    width: 100%;
+    position: relative; 
+    z-index: 3; 
+    margin: 0 auto; 
+    width: auto;
     display: flex;
     justify-content: center;
-    padding: 10px 0; /* Navigáció belső tér */
-    background-color: #000033; /* Navigáció hátterének színe */
+    padding: 10px 0; 
+    background-color: #000033; 
 }
 
 .menu-container {
     display: flex;
-    gap: 20px; /* Gombok közötti távolság */
+    gap: 20px; 
     justify-content: center;
 }
 
 .menu-item {
     color: #ffffff;
-    font-size: 1rem; /* Alap méret nagyobb képernyőn */
+    font-size: 1rem; 
     text-transform: uppercase;
-    padding: 10px 25px; /* Belül tér a gombokban */
+    padding: 10px 25px; 
     text-decoration: none;
-    border-radius: 5px; /* Lekerekített szélek */
-    background-color: #000033; /* Sötét gomb háttér */
-    transition: all 0.3s ease; /* Animáció hoverre */
+    border-radius: 5px; 
+    background-color: #000033; 
+    transition: all 0.3s ease; 
 }
 
 .menu-item:hover {
-    background-color: #000044; /* Hover állapot színe */
+    background-color: #000044; 
 }
 
 .map-container {
@@ -92,7 +92,7 @@
     max-width: 1400px; 
     width: 90%; 
     margin: 60px auto; 
-    z-index: 1; /* Mindig a navigáció alatt marad */
+    z-index: 1; 
 }
 
 #map {

@@ -157,6 +157,16 @@ body {
         padding: 8px 15px; 
         font-size: 0.9rem; 
     }
+
+    .footer {
+        font-size: 0.85rem;
+    }
+    .footer h3 {
+        font-size: 1rem;
+    }
+    .footer ol li {
+        margin-bottom: 3px;
+    }
 }
 
 
@@ -222,4 +232,48 @@ caption {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     display: block; 
     margin: 0 auto; 
+}
+
+
+.footer {
+    font-size: 0.9rem; /* Standardized font size */
+    line-height: 1.5; /* Consistent line spacing */
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px; /* Padding for spacing */
+    border-top: 1px solid #ddd; /* Divider for footer */
+}
+
+.footer h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333; /* Neutral text color */
+    margin-bottom: 15px;
+}
+
+.footer ol {
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+
+.footer ol li {
+    margin-bottom: 5px;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer a.text-muted {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.footer a.text-muted:hover {
+    color: #007bff;
 }
